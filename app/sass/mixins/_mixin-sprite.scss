@@ -1,0 +1,9 @@
+@mixin sprite($map, $sprite){
+  //map-get($map, $sprite)
+  display: inline-block;
+  $sprite: map-get($map, $sprite);
+
+  background: url(map-get($sprite, 'image')) map-get($sprite, 'offset-x') map-get($sprite, 'offset-y') no-repeat;
+  width: map-get($sprite, 'width');
+  height: map-get($sprite, 'height');
+}

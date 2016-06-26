@@ -1,0 +1,148 @@
+    /*
+    SCSS variables are information about icon's compiled state, stored under its original file name
+
+    .icon-home {
+    width: map-get($icon-home, 'width');
+    }
+
+    At the bottom of this section, we provide information about the spritesheet itself
+    */
+
+    $spritesheet: (
+    width: 236px,
+    height: 178px,
+    image: './../../userFolder/images/sprites.png',
+            bedrooms: (
+            name: 'bedrooms',
+            x: 102px,
+            y: 146px,
+            offset-x: -102px,
+            offset-y: -146px,
+            width: 32px,
+            height: 32px,
+            total-width: 236px,
+            total-height: 178px,
+            image: './../../userFolder/images/sprites.png'
+            ),
+            cabinets-hallways: (
+            name: 'cabinets-hallways',
+            x: 172px,
+            y: 100px,
+            offset-x: -172px,
+            offset-y: -100px,
+            width: 32px,
+            height: 32px,
+            total-width: 236px,
+            total-height: 178px,
+            image: './../../userFolder/images/sprites.png'
+            ),
+            cabinets-walls: (
+            name: 'cabinets-walls',
+            x: 68px,
+            y: 146px,
+            offset-x: -68px,
+            offset-y: -146px,
+            width: 32px,
+            height: 32px,
+            total-width: 236px,
+            total-height: 178px,
+            image: './../../userFolder/images/sprites.png'
+            ),
+            cabinets: (
+            name: 'cabinets',
+            x: 0px,
+            y: 146px,
+            offset-x: 0px,
+            offset-y: -146px,
+            width: 32px,
+            height: 32px,
+            total-width: 236px,
+            total-height: 178px,
+            image: './../../userFolder/images/sprites.png'
+            ),
+            computer-table: (
+            name: 'computer-table',
+            x: 172px,
+            y: 66px,
+            offset-x: -172px,
+            offset-y: -66px,
+            width: 32px,
+            height: 32px,
+            total-width: 236px,
+            total-height: 178px,
+            image: './../../userFolder/images/sprites.png'
+            ),
+            in-time-icon: (
+            name: 'in-time-icon',
+            x: 0px,
+            y: 80px,
+            offset-x: 0px,
+            offset-y: -80px,
+            width: 64px,
+            height: 64px,
+            total-width: 236px,
+            total-height: 178px,
+            image: './../../userFolder/images/sprites.png'
+            ),
+            kitchens: (
+            name: 'kitchens',
+            x: 132px,
+            y: 80px,
+            offset-x: -132px,
+            offset-y: -80px,
+            width: 32px,
+            height: 32px,
+            total-width: 236px,
+            total-height: 178px,
+            image: './../../userFolder/images/sprites.png'
+            ),
+            logo-dark: (
+            name: 'logo-dark',
+            x: 0px,
+            y: 0px,
+            offset-x: 0px,
+            offset-y: 0px,
+            width: 170px,
+            height: 78px,
+            total-width: 236px,
+            total-height: 178px,
+            image: './../../userFolder/images/sprites.png'
+            ),
+            tables-and-cabinets: (
+            name: 'tables-and-cabinets',
+            x: 34px,
+            y: 146px,
+            offset-x: -34px,
+            offset-y: -146px,
+            width: 32px,
+            height: 32px,
+            total-width: 236px,
+            total-height: 178px,
+            image: './../../userFolder/images/sprites.png'
+            ),
+            the-best-icon: (
+            name: 'the-best-icon',
+            x: 66px,
+            y: 80px,
+            offset-x: -66px,
+            offset-y: -80px,
+            width: 64px,
+            height: 64px,
+            total-width: 236px,
+            total-height: 178px,
+            image: './../../userFolder/images/sprites.png'
+            ),
+            thumbs-up-icon: (
+            name: 'thumbs-up-icon',
+            x: 172px,
+            y: 0px,
+            offset-x: -172px,
+            offset-y: 0px,
+            width: 64px,
+            height: 64px,
+            total-width: 236px,
+            total-height: 178px,
+            image: './../../userFolder/images/sprites.png'
+            ),
+    );
+

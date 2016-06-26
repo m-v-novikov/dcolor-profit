@@ -1,0 +1,100 @@
+main{
+  .product-list{
+    @include make-md-column(12);
+    @include make-lg-column(12);
+    padding: 0;
+    margin: 0 -20px;
+    .product-item{
+      @include make-md-column(3);
+      @include make-lg-column(3);
+      padding: 10px 20px;
+      a{
+        border: 1px solid #d6d6d6;
+        p{
+          font-family: 'Open Sans Bold', 'Open Sans';
+          font-size: 13px;
+          max-width: 80%;
+          margin: 0 auto;
+          height: 90px;
+          color: #795B1E;
+          line-height: 18px;
+          span{
+            vertical-align: middle;
+            display: inline-block;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+
+  .free-advice{
+    margin: 20px 0;
+    padding: 20px 0;
+    @include gradient-horizontal(#fbe179, #cc9933);
+    h3{
+      margin: 20px 0;
+      font-size: 22px;
+      color: #795B1E;
+      padding: 7px 0;
+    }
+    .get-advice{
+      float: right;
+      margin: 15px 0;
+      input{
+        border: none;
+        padding: 10px 30px;
+        font-size: 18px;
+      }
+      button{
+        font-size: 18px;
+        margin-left: 60px;
+        border: none;
+        background: #000000;
+        color: #ffffff;
+        padding: 10px 30px;
+      }
+    }
+  }
+
+  .our-advantages{
+    .advantages-item{
+      display: inline-block;
+      width: 30%;
+      margin-right: 2%;
+      font-size: 13px;
+      color: #333333;
+      padding-left: 70px;
+      text-align: left;
+      vertical-align: top;
+      &:before{
+        content: '';
+        float: left;
+        margin-left: -70px;
+      }
+      h6{
+        margin-bottom: 15px;
+        font-weight: bold;
+        padding-left: 20px;
+      }
+      p{
+        padding-left: 20px;
+      }
+    }
+    .quality{
+      &:before{
+        @include sprite($spritesheet, 'thumbs-up-icon');
+      }
+    }
+    .in-time{
+      &:before{
+        @include sprite($spritesheet, 'in-time-icon');
+      }
+    }
+    .best-material{
+      &:before{
+        @include sprite($spritesheet, 'the-best-icon');
+      }
+    }
+  }
+}
