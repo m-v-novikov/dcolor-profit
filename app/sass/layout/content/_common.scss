@@ -3,7 +3,9 @@ main{
     @include make-md-column(12);
     @include make-lg-column(12);
     padding: 0;
-    margin: 0 -20px;
+    margin-left: -20px;
+    margin-right: -20px;
+    width: auto!important;
     .product-item{
       @include make-md-column(3);
       @include make-lg-column(3);
@@ -24,6 +26,35 @@ main{
             text-decoration: underline;
           }
         }
+      }
+    }
+  }
+
+  .campaign-list{
+    .campaign-item{
+      &:before{
+        content: '';
+        display: block;
+        @include sprite($spritesheet, 'campaigns-delimetr');
+        margin: 10px auto;
+      }
+      .date{
+        font-size: 11px;
+        color: #C9C9C9;
+      }
+      a{
+        font-family: 'Open Sans Bold', 'Open Sans';
+        text-decoration: underline;
+        font-weight: bold;
+        color: #795B1E;
+        line-height: 18px;
+        margin: 10px 0 30px;
+      }
+    }
+    .campaign-item:first-of-type{
+      &:before{
+        content: '';
+        display: none;
       }
     }
   }

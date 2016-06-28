@@ -7370,6 +7370,10 @@ button.close {
   margin-top: 20px !important;
 }
 
+.mt-50 {
+  margin-top: 50px !important;
+}
+
 .paginator span {
   font-size: 12px;
   color: #999999;
@@ -7394,14 +7398,16 @@ button.close {
   color: #ffffff;
 }
 
-.menu-item a {
-  padding: 5px 0;
-  display: block;
+.breadcrumb {
+  background: none;
 }
-.menu-item a:hover, .menu-item a.active {
-  background: #4d90f0;
+.breadcrumb li a {
+  color: #C9C9C9;
+  font-size: 11px;
+  text-decoration: underline;
+}
+.breadcrumb li:last-of-type a {
   text-decoration: none;
-  color: #ffffff;
 }
 
 ul, li {
@@ -7490,11 +7496,21 @@ header .main-menu .menu-item {
 }
 header .main-menu .menu-item a {
   display: inline-block;
+  padding: 5px 0;
+}
+header .main-menu .menu-item:hover, header .main-menu .menu-item.active {
+  border-bottom: none;
+  padding-bottom: 12px;
+}
+header .main-menu .menu-item:hover a, header .main-menu .menu-item.active a {
+  background: #333333;
+  text-decoration: none;
+  color: #ffffff;
 }
 header .contact-us {
   display: inline-block;
   vertical-align: middle;
-  margin: 0 10px;
+  margin: 0 0 0 30px;
   font-family: 'Open Sans Regular', 'Open Sans';
   font-size: 15px;
   color: #333333;
@@ -7554,23 +7570,36 @@ header .banner-area .description {
 }
 header .category-wrap {
   border-bottom: 1px solid #d6d6d6;
-  padding: 15px 0 35px;
+  padding: 35px 0 35px;
+}
+header .category-wrap.without-banner {
+  border-top: 1px solid #d6d6d6;
+  margin-top: 20px;
 }
 header .category {
   text-align: center;
   white-space: normal;
+  margin-left: -60px;
+  margin-right: -60px;
 }
 header .category .category-item {
   display: inline-block;
-  margin: 10px 45px;
+  margin: 10px 58px;
+  cursor: pointer;
 }
 header .category .category-item a {
   vertical-align: middle;
+  padding: 5px 0;
 }
 header .category .category-item:before {
   content: '';
   margin-right: 10px;
   vertical-align: middle;
+}
+header .category .category-item:hover a, header .category .category-item.active a {
+  background: #333333;
+  text-decoration: none;
+  color: #ffffff;
 }
 header .category .kitchens:before {
   display: inline-block;
@@ -7625,7 +7654,9 @@ main .product-list {
   padding-left: 15px;
   padding-right: 15px;
   padding: 0;
-  margin: 0 -20px;
+  margin-left: -20px;
+  margin-right: -20px;
+  width: auto !important;
 }
 @media (min-width: 992px) {
   main .product-list {
@@ -7678,6 +7709,31 @@ main .product-list .product-item a p span {
   vertical-align: middle;
   display: inline-block;
   text-decoration: underline;
+}
+main .campaign-list .campaign-item:before {
+  content: '';
+  display: block;
+  display: inline-block;
+  background: url("./../../userFolder/images/sprites.png") -206px -66px no-repeat;
+  width: 25px;
+  height: 7px;
+  margin: 10px auto;
+}
+main .campaign-list .campaign-item .date {
+  font-size: 11px;
+  color: #C9C9C9;
+}
+main .campaign-list .campaign-item a {
+  font-family: 'Open Sans Bold', 'Open Sans';
+  text-decoration: underline;
+  font-weight: bold;
+  color: #795B1E;
+  line-height: 18px;
+  margin: 10px 0 30px;
+}
+main .campaign-list .campaign-item:first-of-type:before {
+  content: '';
+  display: none;
 }
 main .free-advice {
   margin: 20px 0;

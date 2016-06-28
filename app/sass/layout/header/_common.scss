@@ -21,13 +21,23 @@ header{
       border-bottom: 2px solid #cc9933;
       a{
         display: inline-block;
+        padding: 5px 0;
+      }
+      &:hover, &.active {
+        border-bottom: none;
+        padding-bottom: 12px;
+        a {
+          background: #333333;
+          text-decoration: none;
+          color: #ffffff;
+        }
       }
     }
   }
   .contact-us{
     display: inline-block;
     vertical-align: middle;
-    margin: 0 10px;
+    margin: 0 0 0 30px;
     font-family: 'Open Sans Regular', 'Open Sans';
     font-size: 15px;
     color: #333333;
@@ -60,18 +70,35 @@ header{
     }
   }
 
-  .category-wrap{border-bottom: 1px solid #d6d6d6; padding: 15px 0 35px;}
+  .category-wrap{
+    border-bottom: 1px solid #d6d6d6;
+    padding: 35px 0 35px;
+    &.without-banner{
+      border-top: 1px solid #d6d6d6;
+      margin-top: 20px;
+    }
+  }
   .category{
     text-align: center;
     white-space: normal;
+    margin-left: -60px;
+    margin-right: -60px;
     .category-item{
       display: inline-block;
-      margin: 10px 45px;
-      a{vertical-align: middle;}
+      margin: 10px 58px;
+      cursor: pointer;
+      a{vertical-align: middle; padding: 5px 0;}
       &:before{
         content: '';
         margin-right: 10px;
         vertical-align: middle;
+      }
+      &:hover, &.active{
+        a{
+          background: #333333;
+          text-decoration: none;
+          color: #ffffff;
+        }
       }
     }
     .kitchens:before{
