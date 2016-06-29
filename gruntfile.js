@@ -46,14 +46,14 @@ module.exports = function(grunt){
                 dest: './userFolder/images/sprites.png',
                 destCss: './app/sass/template/generated/_sprites.scss',
                 cssTemplate: './app/grunt/templates/sprites.scss.handlebars',
-                imgPath: './../../userFolder/images/sprites.png',
+                imgPath: './../images/sprites.png',
                 padding: 2
             }
         },
         watch: {
-            files: ['./app/sass/**/**/*.scss', './app/slim/**/**/*.slim'],
+            files: ['./app/sass/**/**/*.scss', './app/slim/**/**/*.slim', 'app/js/**/**/*.js'],
             // 'app/js/**/**/*.js',      //, './userFolder/images/sprites/**/**/**/*.png'
-            tasks: ['slim', 'sass'/*, 'concat', 'sprite'*/],
+            tasks: ['slim', 'sass', 'concat'/*, 'concat', 'sprite'*/],
             options: {
                 event: ['changed', 'added', 'deleted'],
                 spawn: false

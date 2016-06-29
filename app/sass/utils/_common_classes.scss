@@ -55,3 +55,14 @@
   }
 }
 
+.label-new{
+  display: block;
+  @include gradient-horizontal(#fbe179, #cc9933);
+  color: #ffffff;
+  padding: 5px 15px;
+  font-size: 13px;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.6);
+  -webkit-text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.6);
+  -moz-text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.6);
+}
+

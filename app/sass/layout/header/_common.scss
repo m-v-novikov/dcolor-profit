@@ -10,7 +10,7 @@ header{
     @include make-lg-column(8);
     @include make-md-column(8);
     float: none!important;
-    margin: 0 10px;
+    margin: 0;
     display: inline-block;
     vertical-align: middle;
     text-align: center;
@@ -37,15 +37,15 @@ header{
   .contact-us{
     display: inline-block;
     vertical-align: middle;
-    margin: 0 0 0 30px;
-    font-family: 'Open Sans Regular', 'Open Sans';
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
     font-size: 15px;
     color: #333333;
     white-space: nowrap;
     span{vertical-align: middle;}
     .high{
       font-size: 24px;
-      margin-left: 15px;
+      margin-left: 5px;
     }
   }
 
@@ -53,7 +53,6 @@ header{
     margin: 20px 0;
     padding: 20px 0;
     @include gradient-horizontal(#fbe179, #cc9933);
-    font-family: 'Open Sans Regular', 'Open Sans';
     .title{
       margin: 20px 0;
       font-size: 22px;
@@ -85,7 +84,7 @@ header{
     margin-right: -60px;
     .category-item{
       display: inline-block;
-      margin: 10px 58px;
+      margin: 10px 35px;
       cursor: pointer;
       a{vertical-align: middle; padding: 5px 0;}
       &:before{

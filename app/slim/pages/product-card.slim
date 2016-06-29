@@ -1,0 +1,90 @@
+doctype html
+html
+  head
+    meta charset='utf-8'
+    title ПрофитМ
+    link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&subset=cyrillic" rel="stylesheet"
+    link rel='stylesheet' href='./../../css/main.css'
+    script src='./../../../userFolder/js/compress.js'
+
+  body.clearfix
+    header
+      div.max-width-wrap
+        a.logotype[href='/']
+        ul.main-menu
+          li.menu-item
+            a href="#" Для дилеров
+          li.menu-item
+            a href="#" Новинки
+          li.menu-item
+            a href="#" Акции
+          li.menu-item
+            a href="#" Контакты
+        div.contact-us
+          span + 7 (4812)
+          span.high 560-576
+
+      div.category-wrap.without-banner
+        div.max-width-wrap
+          ul.category
+            li.category-item.kitchens
+              a href="#" Кухни
+            li.category-item.cabinets-hallways
+              a href="#" Прихожие
+            li.category-item.cabinets-walls
+              a href="#" Стенки
+            li.category-item.bedrooms
+              a href="#" Спальни
+            li.category-item.cabinets
+              a href="#" Шкафы
+            li.category-item.tables-and-cabinets
+              a href="#" Столы и тумбы
+            li.category-item.computer-table
+              a href="#" Компьютерные столы
+
+    main
+      div.max-width-wrap.text-center.clearfix
+        ul.breadcrumb.clearfix
+          - for i in ['Главная', 'Шкафы']
+            li
+              a href='#' #{i}
+        h3 Шкаф "Имидж"
+        div.product-card.clearfix.text-left
+          ul.img-list
+            li.main-img
+              img.img-responsive src='./../../images/temporary/u413.png'
+            li.secondary-img.active
+              img.img-responsive src='./../../images/temporary/u413.png'
+            li.secondary-img
+              img.img-responsive src='./../../images/temporary/u361.png'
+            li.secondary-img
+              img.img-responsive src='./../../images/temporary/u411.png'
+            li.pagination
+              span.point.active data-js-src='./../../images/temporary/u413.png'
+              span.point data-js-src='./../../images/temporary/u361.png'
+              span.point data-js-src='./../../images/temporary/u411.png'
+          div.product-card-desc
+            strong Размер:
+            p 1770х2560х420
+            strong Цвет:
+            p Венге, Дуб молочный, Ясень темный, Ясень светлый
+            div.known-price
+              span Цены уточняйте у продавцов по тел.
+              span.phone + 7 (4812) 560-576
+            div.desc-text
+              |Мы - смоленская веб-студия, занимаемся созданием сайтов под ключ и их продвижением в поисковых системах Яндексе и Google. С 2012 года мы создаем сайты, занимаемся созданием логотипов и фирменных стилей, сопровождаем сайты любой сложности. Если вы задумались о привлечении клиентов с помощью сайта, обратитесь к нашему менеджеру по телефону 560-576 по поводу SEO-продвижения сайта и ведения контекстной рекламы.
+            div.elements-img
+              p
+                strong Элементы серии:
+              img src='./../../images/temporary/u387.png'
+              img src='./../../images/temporary/u387.png'
+              img src='./../../images/temporary/u387.png'
+
+
+    footer.max-width-wrap.mt-20
+      div.copyright.clearfix
+        span.pull-left © 2016 «Профит-М»
+        span.pull-right
+          | Сделано в
+          a href='#' Dancecolor.ru
+

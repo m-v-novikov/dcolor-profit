@@ -1,74 +1,23 @@
-//'use strict';
-//
-//var getKitchenApp = angular.module('getKitchenApp', [
-//    'ngRoute',
-//    'kitchenControllers'
-//]);
-//
-//getKitchenApp.config(['$routeProvider',
-//    function($routeProvider){
-//        $routeProvider
-//            .when('/kitchens', {
-//                templateUrl: './../html/pages/main.html',
-//                controller: 'KitchenUsCtrl'
-//            })
-//            .otherwise({
-//                redirectTo: '/kitchens'
-//            });
-//    }
-//]);
-//'use strict';
-//
-//var getKitchenApp = angular.module('getKitchenApp');
-//
-//getKitchenApp.controller('')
+$(document).ready(function(){
+    $('.secondary-img').on('click', function(){
+        if(!$(this).hasClass('active')){
+            $('.secondary-img').removeClass('active');
+            $('.point').removeClass('active');
+            var img_src = $('img', this).attr('src');
+            $('.main-img img').attr('src', img_src);
+            $(this).addClass('active');
+            $('[data-js-src="' + img_src + '"]').addClass('active');
+        }
+    });
 
-//$(document).ready(function(){
-//    console.log('hi max');
-//});
-//'use strict';
-//var getKitchenApp = angular.module('getKitchenApp', []);
-
-
-// Define the `PhoneListController` controller on the `phonecatApp` module
-//getKitchenApp.controller('kitchenListControllers', function kitchenListControllers($scope) {
-//
-//    $scope.kitchens = [
-//        {
-//            name: 'Nexus S',
-//            snippet: 'Fast just got faster with Nexus S.'
-//        }, {
-//            name: 'Motorola XOOM™ with Wi-Fi',
-//            snippet: 'The Next, Next Generation tablet.'
-//        }, {
-//            name: 'MOTOROLA XOOM™',
-//            snippet: 'The Next, Next Generation tablet.'
-//        }
-//    ];
-//});
-//'use strict';
-//
-//// Define the `phonecatApp` module
-//angular.module('getKitchenApp', [
-//    'ngRoute',
-//    'kitchenControllers'
-//]);
-//
-//'use strict';
-//
-//angular
-//    .module('getKitchenApp')
-//    .config(['$locationProvider' ,'$routeProvider',
-//        function config($locationProvider, $routeProvider) {
-//            $locationProvider.hashPrefix('');
-//
-//            $routeProvider
-//                .when('/phones', {
-//                    templateUrl: './../html/pages/main.html'
-//                })
-//                .otherwise('/phones');
-//        }
-//    ]);
-
-//'use strict';
-//angular.module('getKitchenApp', []);
+    $('.point').on('click', function(){
+        if(!$(this).hasClass('active')){
+            $('.point').removeClass('active');
+            $('.secondary-img').removeClass('active');
+            var img_src = $(this).attr('data-js-src');
+            $('.main-img img').attr('src', img_src);
+            $(this).addClass('active');
+            $('[src="' + img_src + '"]').parent('.secondary-img ').addClass('active');
+        }
+    });
+});
