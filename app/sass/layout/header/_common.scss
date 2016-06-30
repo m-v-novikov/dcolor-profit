@@ -1,125 +1,126 @@
-header{
+header {
   padding: 20px 0;
   white-space: nowrap;
-  .logotype{
-    @include sprite($spritesheet, 'logo-dark');
+}
+.logotype{
+  @include sprite($spritesheet, 'logo-dark');
+  display: inline-block;
+  vertical-align: middle;
+}
+.main-menu{
+  @include make-lg-column(8);
+  @include make-md-column(8);
+  float: none!important;
+  margin: 0;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  .menu-item{
     display: inline-block;
-    vertical-align: middle;
-  }
-  .main-menu{
-    @include make-lg-column(8);
-    @include make-md-column(8);
-    float: none!important;
-    margin: 0;
-    display: inline-block;
-    vertical-align: middle;
-    text-align: center;
-    .menu-item{
+    margin-right: 40px;
+    padding: 10px 0;
+    border-bottom: 2px solid #cc9933;
+    a{
       display: inline-block;
-      margin-right: 40px;
-      padding: 10px 0;
-      border-bottom: 2px solid #cc9933;
-      a{
-        display: inline-block;
-        padding: 5px 0;
-      }
-      &:hover, &.active {
-        border-bottom: none;
-        padding-bottom: 12px;
-        a {
-          background: #333333;
-          text-decoration: none;
-          color: #ffffff;
-        }
+      padding: 5px 0;
+    }
+    &:hover, &.active {
+      border-bottom: none;
+      padding-bottom: 12px;
+      a {
+        background: #333333;
+        text-decoration: none;
+        color: #ffffff;
       }
     }
   }
-  .contact-us{
-    display: inline-block;
-    vertical-align: middle;
-    margin: 0;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 15px;
-    color: #333333;
-    white-space: nowrap;
-    span{vertical-align: middle;}
-    .high{
-      font-size: 24px;
-      margin-left: 5px;
-    }
+}
+.contact-us{
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  color: #333333;
+  white-space: nowrap;
+  span{vertical-align: middle;}
+  .high{
+    font-size: 24px;
+    margin-left: 5px;
   }
+}
 
-  .banner-area{
+.banner-area{
+  margin: 20px 0 0;
+  padding: 20px 0;
+  @include gradient-horizontal(#fbe179, #cc9933);
+  .title{
     margin: 20px 0;
-    padding: 20px 0;
-    @include gradient-horizontal(#fbe179, #cc9933);
-    .title{
-      margin: 20px 0;
-      font-size: 22px;
-      color: #795B1E;
-    }
-    .description{
-      @include make-lg-column(6);
-      @include make-md-column(6);
-      background: #ffffff;
-      white-space: normal;
-      padding: 30px;
-      font-size: 13px;
-      color: #333333;
-    }
+    font-size: 22px;
+    color: #795B1E;
   }
-
-  .category-wrap{
-    border-bottom: 1px solid #d6d6d6;
-    padding: 35px 0 35px;
-    &.without-banner{
-      border-top: 1px solid #d6d6d6;
-      margin-top: 20px;
-    }
-  }
-  .category{
-    text-align: center;
+  .description{
+    @include make-lg-column(6);
+    @include make-md-column(6);
+    background: #ffffff;
     white-space: normal;
-    margin-left: -60px;
-    margin-right: -60px;
-    .category-item{
-      display: inline-block;
-      margin: 10px 35px;
-      cursor: pointer;
-      a{vertical-align: middle; padding: 5px 0;}
-      &:before{
-        content: '';
-        margin-right: 10px;
-        vertical-align: middle;
+    padding: 30px;
+    font-size: 13px;
+    color: #333333;
+  }
+}
+
+.category-wrap{
+  border: 1px solid #d6d6d6;
+  border-top: none;
+  padding: 35px 0 35px;
+  &.without-banner{
+    border-top: 1px solid #d6d6d6;
+    margin-top: 20px;
+  }
+}
+.category{
+  text-align: center;
+  white-space: normal;
+  margin-left: -60px;
+  margin-right: -60px;
+  .category-item{
+    display: inline-block;
+    margin: 10px 35px;
+    cursor: pointer;
+    a{vertical-align: middle; padding: 5px 0;}
+    &:before{
+      content: '';
+      margin-right: 10px;
+      vertical-align: middle;
+    }
+    &:hover, &.active{
+      a{
+        background: #333333;
+        text-decoration: none;
+        color: #ffffff;
       }
-      &:hover, &.active{
-        a{
-          background: #333333;
-          text-decoration: none;
-          color: #ffffff;
-        }
-      }
     }
-    .kitchens:before{
-      @include sprite($spritesheet, 'kitchens');
-    }
-    .cabinets-hallways:before{
-      @include sprite($spritesheet, 'cabinets-hallways');
-    }
-    .cabinets-walls:before{
-      @include sprite($spritesheet, 'cabinets-walls');
-    }
-    .bedrooms:before{
-      @include sprite($spritesheet, 'bedrooms');
-    }
-    .cabinets:before{
-      @include sprite($spritesheet, 'cabinets');
-    }
-    .tables-and-cabinets:before{
-      @include sprite($spritesheet, 'tables-and-cabinets');
-    }
-    .computer-table:before{
-      @include sprite($spritesheet, 'computer-table');
-    }
+  }
+  .kitchens:before{
+    @include sprite($spritesheet, 'kitchens');
+  }
+  .cabinets-hallways:before{
+    @include sprite($spritesheet, 'cabinets-hallways');
+  }
+  .cabinets-walls:before{
+    @include sprite($spritesheet, 'cabinets-walls');
+  }
+  .bedrooms:before{
+    @include sprite($spritesheet, 'bedrooms');
+  }
+  .cabinets:before{
+    @include sprite($spritesheet, 'cabinets');
+  }
+  .tables-and-cabinets:before{
+    @include sprite($spritesheet, 'tables-and-cabinets');
+  }
+  .computer-table:before{
+    @include sprite($spritesheet, 'computer-table');
   }
 }
