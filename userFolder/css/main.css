@@ -7374,6 +7374,10 @@ button.close {
   margin-top: 50px !important;
 }
 
+.mb-20 {
+  margin-bottom: 20px !important;
+}
+
 .paginator span {
   font-size: 12px;
   color: #999999;
@@ -7776,7 +7780,7 @@ header {
 
 .free-advice {
   margin: 20px 0;
-  padding: 20px 0;
+  padding: 30px 0;
   background-color: #cc9933;
   background-image: -moz-linear-gradient(left, #fbe179, #cc9933);
   background-image: -webkit-gradient(linear, 0 0, 100% 0, from(#fbe179), to(#cc9933));
