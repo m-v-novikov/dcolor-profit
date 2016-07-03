@@ -10,6 +10,8 @@ header {
 .main-menu{
   @include make-lg-column(8);
   @include make-md-column(8);
+  @include make-sm-column(8);
+  @include make-xs-column(8);
   float: none!important;
   margin: 0;
   display: inline-block;
@@ -62,6 +64,8 @@ header {
   .description{
     @include make-lg-column(6);
     @include make-md-column(6);
+    @include make-sm-column(6);
+    @include make-xs-column(6);
     background: #ffffff;
     white-space: normal;
     padding: 30px;

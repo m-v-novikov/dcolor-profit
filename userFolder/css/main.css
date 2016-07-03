@@ -7499,6 +7499,16 @@ header {
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  float: left;
+  width: 66.66667%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
   float: none !important;
   margin: 0;
   display: inline-block;
@@ -7512,6 +7522,12 @@ header {
   }
 }
 @media (min-width: 992px) {
+  .main-menu {
+    float: left;
+    width: 66.66667%;
+  }
+}
+@media (min-width: 768px) {
   .main-menu {
     float: left;
     width: 66.66667%;
@@ -7580,6 +7596,16 @@ header {
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  float: left;
+  width: 50%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
   background: #ffffff;
   white-space: normal;
   padding: 30px;
@@ -7593,6 +7619,12 @@ header {
   }
 }
 @media (min-width: 992px) {
+  .banner-area .description {
+    float: left;
+    width: 50%;
+  }
+}
+@media (min-width: 768px) {
   .banner-area .description {
     float: left;
     width: 50%;
@@ -7712,6 +7744,16 @@ header {
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  float: left;
+  width: 25%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
   padding: 10px 20px;
 }
 @media (min-width: 992px) {
@@ -7721,6 +7763,12 @@ header {
   }
 }
 @media (min-width: 1200px) {
+  .product-list .product-item {
+    float: left;
+    width: 25%;
+  }
+}
+@media (min-width: 768px) {
   .product-list .product-item {
     float: left;
     width: 25%;
@@ -7869,6 +7917,16 @@ header {
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  float: left;
+  width: 66.66667%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
   padding: 0;
 }
 @media (min-width: 992px) {
@@ -7878,6 +7936,12 @@ header {
   }
 }
 @media (min-width: 1200px) {
+  .product-card .img-list {
+    float: left;
+    width: 66.66667%;
+  }
+}
+@media (min-width: 768px) {
   .product-card .img-list {
     float: left;
     width: 66.66667%;
@@ -7898,6 +7962,16 @@ header {
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
   text-align: center;
   margin: 20px 0;
 }
@@ -7908,6 +7982,12 @@ header {
   }
 }
 @media (min-width: 1200px) {
+  .product-card .img-list .pagination {
+    float: left;
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
   .product-card .img-list .pagination {
     float: left;
     width: 100%;
@@ -7944,6 +8024,16 @@ header {
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  float: left;
+  width: 33.33333%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 @media (min-width: 992px) {
   .product-card .secondary-img {
@@ -7952,6 +8042,12 @@ header {
   }
 }
 @media (min-width: 1200px) {
+  .product-card .secondary-img {
+    float: left;
+    width: 33.33333%;
+  }
+}
+@media (min-width: 768px) {
   .product-card .secondary-img {
     float: left;
     width: 33.33333%;
@@ -7973,6 +8069,16 @@ header {
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  float: left;
+  width: 33.33333%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
   font-size: 13px;
 }
 @media (min-width: 992px) {
@@ -7982,6 +8088,12 @@ header {
   }
 }
 @media (min-width: 1200px) {
+  .product-card .product-card-desc {
+    float: left;
+    width: 33.33333%;
+  }
+}
+@media (min-width: 768px) {
   .product-card .product-card-desc {
     float: left;
     width: 33.33333%;
