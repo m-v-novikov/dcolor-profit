@@ -80,7 +80,14 @@ html
                   p.v-al-mid
                     a.dib[href='#']
                       span Шкаф для одежды из модульной прихожей "Ксения"
-
+          ul.pagination
+            - for i in [1, 2, 3, 4, 5, '...', 46]
+              -if i==1
+                li
+                  a.active href="#" #{i}
+              -else
+                li
+                  a href="#" #{i}
 
         div.max-width-wrap.clearfix
           div.seo-texts.mt-20

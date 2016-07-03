@@ -7432,6 +7432,34 @@ button.close {
   -moz-text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.6);
 }
 
+.pagination {
+  margin: 30px 0;
+}
+.pagination li a {
+  color: #333333;
+  margin: 0 5px;
+}
+.pagination li a:hover, .pagination li a.active {
+  background-color: #cc9933;
+  background-image: -moz-linear-gradient(left, #fbe179, #cc9933);
+  background-image: -webkit-gradient(linear, 0 0, 100% 0, from(#fbe179), to(#cc9933));
+  background-image: -webkit-linear-gradient(left, #fbe179, #cc9933);
+  background-image: -o-linear-gradient(left, #fbe179, #cc9933);
+  background-image: linear-gradient(to right, #fbe179, #cc9933);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFBE179', endColorstr='#FFCC9933', GradientType=1);
+  color: #795B1E;
+  font-weight: bold;
+  border: none;
+  padding: 7px 13px;
+}
+.pagination > li:first-child > a, .pagination > li:last-child > a {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0;
+}
+
 ul, li {
   list-style: none;
   margin: 0;
